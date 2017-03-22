@@ -1,0 +1,122 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  display: none;
+  transition: opacity var(--transitionDuration) var(--transitionTimingFn);
+}
+
+.modalContainer.modalShow {
+  opacity: 1;
+}
+
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modalClose {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  user-select: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 99999px;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: calc(100vh - 2rem);
+  /*max-width: calc(100vw - 2rem);*/
+  width: 50%;
+  position: relative;
+}
+
+.modalShow .modalContent,
+.modalShow .modalContentDefaults {
+  transform: translate(0, 0);
+}
+
+.modalBody {
+  overflow: auto;
+}
+
+.modalOverlayDefaults {
+  background-color: var(--modalOverlayBackgroundColor);
+  opacity: var(--modalOverlayOpacity)
+}
+
+.modalCloseDefaults {
+  color: var(--modalCloseColor);
+}
+
+.modalContentDefaults {
+  transform: translate(0, -50%);
+  transition: transform var(--transitionDuration) var(--transitionTimingFn);
+}
+
+.modalHeaderDefaults {
+  background-color: var(--headerBackgroundColor);
+  padding: var(--padding);
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  font-size: var(--headerFontSize);
+  border-bottom-width: var(--headerBorderBottomWidth);
+  border-bottom-style: var(--headerBorderBottomStyle);
+  border-bottom-color: var(--headerBorderBottomColor);
+}
+
+.modalBodyDefaults {
+  background-color: var(--bodyBackgroundColor);
+  padding: var(--padding);
+}
+
+.modalFooterDefaults {
+  background-color: var(--footerBackgroundColor);
+  padding: var(--padding);
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  border-top-width: var(--footerBorderTopWidth);
+  border-top-style: var(--footerBorderTopStyle);
+  border-top-color: var(--footerBorderTopColor);
+}
+
+:root {
+  --borderRadius: 5px;
+  --padding: 1rem;
+  --transitionDuration: .15s;
+  --transitionTimingFn: ease-out;
+  --headerBackgroundColor: #dddddd;
+  --footerBackgroundColor: var(--headerBackgroundColor);
+  --bodyBackgroundColor: #ffffff;
+  --headerBorderBottomWidth: 1px;
+  --headerBorderBottomStyle: solid;
+  --headerBorderBottomColor: #6666;
+  --footerBorderTopWidth: var(--headerBorderBottomWidth);
+  --footerBorderTopStyle: var(--headerBorderBottomStyle);
+  --footerBorderTopColor: var(--headerBorderBottomColor);
+  --headerFontSize: 1.5rem;
+  --modalOverlayBackgroundColor: #000000;
+  --modalOverlayOpacity: 0.75;
+  --modalCloseColor: #ffffff;
+}
+
