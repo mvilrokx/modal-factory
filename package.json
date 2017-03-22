@@ -1,7 +1,7 @@
 {
   "name": "modal",
   "version": "1.0.0",
-  "description": "zero-dependency, pure JavaScript modal",
+  "description": "Zero-dependency, pure JavaScript, modal.",
   "main": "./dist/modal.js",
   "directories": {
     "test": "test"
@@ -13,11 +13,19 @@
     "test": "tape --require babel-register test/**/*.js | faucet",
     "preprod": "rm -rf ./dist",
     "doc": "jsdoc -r src -d docs",
-    "prod": "npm test && npm run doc && webpack --config webpack.prod.config.js -p"
+    "prod": "npm test && npm run doc && webpack --config webpack.prod.config.js -p",
+    "prepublish": "npm run prod"
   },
-  "keywords": [],
-  "author": "Mark Vilrokx <mvilrokx@gmail.com>",
-  "license": "ISC",
+  "keywords": ["modal", "popup"],
+  "author": "Mark Vilrokx <mark.vilrokx@oracle.com>",
+  "publishConfig": {
+    "registry": "http://10.208.177.20/"
+  },
+  "license": "UNLICENCED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@orahub.oraclecorp.com:appslab/modal.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-loader": "^6.3.2",
