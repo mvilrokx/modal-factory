@@ -10,9 +10,6 @@
     <h1 class="center">Modal Test</h1>
     <script type="text/javascript" src="dist/modalFactory.js"></script>
     <script>
-      document.getElementById('showModal').addEventListener('click', () => {modal.show() })
-    </script>
-    <script>
       // 1. Create modal
       const modal = modalFactory({
         // styles: {modalOverlay:{backgroundColor: 'black'}},
@@ -24,6 +21,9 @@
       // 3. add Event Handlers to modal
       document.getElementById('yep').addEventListener('click', (e) => {modal.hide() })
       document.getElementById('nope').addEventListener('click', (e) => {modal.hide() })
+
+      // Unrelated to library, this is just to be able to show the modal
+      document.getElementById('showModal').addEventListener('click', () => {modal.show() })
     </script>
   </body>
 </html>

@@ -24,6 +24,8 @@ Finally, you can (re)build the library locally, recreate the documentation and r
 
 You should now be able to open the ```example.html``` page in the root folder and see a modal window in action. (I recommend you use [browsersync](https://www.browsersync.io/) for testing but it should work by just opening the file in your browser as well.)
 
+> Note that ```example.html``` is using [Basscss](http://basscss.com/) to style the buttons on the modal.
+
 ## Running the tests
 
     $ npm run test
@@ -55,7 +57,7 @@ Then in your code, e.g. ```index.js```
 import modal from 'modal-factory'
 ```
 
-And then use index.js in your html to instanciate modals from the factory. (see ```example.html``` for an example)
+Run your favorite bundler and add index.js in your html, just before the ```body``` tag. You can then start writting JavaScript to instanciate modals from the factory. (see ```example.html``` for an example)
 
 ## Built With
 * [Babel](https://babeljs.io/) - The compiler for writing next generation JavaScript
@@ -66,4 +68,4 @@ And then use index.js in your html to instanciate modals from the factory. (see 
 * [Webpack](https://webpack.js.org/) - Bundler
 
 ## Authors
-* Mark Vilrokx - Initial work - Oracle
+* Mark Vilrokx - Initial work - [Oracle](https://oracle.com)
