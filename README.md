@@ -1,4 +1,4 @@
-# Modal Factory
+# Modal Factory [![Build Status](https://travis-ci.org/mvilrokx/modal-factory.svg?branch=master)](https://travis-ci.org/mvilrokx/modal-factory)
 Zero-dependency, pure JavaScript, modal dialogs.
 
 ## Getting started
