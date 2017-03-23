@@ -1,10 +1,11 @@
 {
-  "name": "modal",
+  "name": "modal-factory",
   "version": "1.0.0",
-  "description": "Zero-dependency, pure JavaScript, modal.",
-  "main": "./dist/modal.js",
+  "description": "Zero-dependency, pure JavaScript, modal dialogs.",
+  "main": "./dist/modalFactory.js",
   "directories": {
-    "test": "test"
+    "test": "./test",
+    "doc": "./doc"
   },
   "scripts": {
     "prebuild": "rm -rf ./dist",
@@ -12,19 +13,28 @@
     "watch": "webpack --progress --colors --watch",
     "test": "tape --require babel-register test/**/*.js | faucet",
     "preprod": "rm -rf ./dist",
-    "doc": "jsdoc -r src -d docs",
     "prod": "npm test && npm run doc && webpack --config webpack.prod.config.js -p",
+    "predoc": "rm -rf ./docs",
+    "doc": "jsdoc -r src -d docs",
     "prepublish": "npm run prod"
   },
-  "keywords": ["modal", "popup"],
-  "author": "Mark Vilrokx <mark.vilrokx@oracle.com>",
-  "publishConfig": {
-    "registry": "http://10.208.177.20/"
+  "keywords": [
+    "modal window",
+    "modal dialog",
+    "modal popup"
+  ],
+  "author": {
+    "name": "Mark Vilrokx",
+    "email": "mark@vilrokx.com",
+    "url": "http://vilrokx.com"
   },
   "license": "UNLICENCED",
   "repository": {
     "type": "git",
-    "url": "git+https://git@orahub.oraclecorp.com:appslab/modal.git"
+    "url": "git+https://github.com/mvilrokx/modal-factory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvilrokx/modal-factory/issues"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

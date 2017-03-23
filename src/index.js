@@ -1,3 +1,3 @@
-import modal from './lib/modal'
+import modalFactory from './lib/modalFactory'
 
-module.exports = modal
+module.exports = modalFactory

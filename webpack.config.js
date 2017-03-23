@@ -4,8 +4,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'modal.js',
-    library: 'modal',
+    filename: 'modalFactory.js',
+    library: 'modalFactory',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
