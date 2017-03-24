@@ -1,7 +1,6 @@
 [![Inline docs](http://inch-ci.org/github/mvilrokx/modal-factory.svg?branch=master)](http://inch-ci.org/github/mvilrokx/modal-factory)
 [![Build Status](https://travis-ci.org/mvilrokx/modal-factory.svg?branch=master)](https://travis-ci.org/mvilrokx/modal-factory)
 [![npm version](https://badge.fury.io/js/modal-factory.svg)](https://badge.fury.io/js/modal-factory)
-[![Dependency Status](https://www.versioneye.com/user/projects/58d4a098cef500003fd3c3a5/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58d4a098cef500003fd3c3a5)
 [![NSP Status](https://nodesecurity.io/orgs/me/projects/cca1e821-3e10-4c89-bcd8-546c6d328b65/badge)](https://nodesecurity.io/orgs/me/projects/cca1e821-3e10-4c89-bcd8-546c6d328b65)
 [![Code Climate](https://codeclimate.com/github/mvilrokx/modal-factory/badges/gpa.svg)](https://codeclimate.com/github/mvilrokx/modal-factory)
 [![dependencies Status](https://david-dm.org/mvilrokx/modal-factory/status.svg)](https://david-dm.org/mvilrokx/modal-factory)
