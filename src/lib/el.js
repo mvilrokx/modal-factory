@@ -55,22 +55,27 @@ const el = (type, options = {}) => {
 export default el
 
 /**
- * Syntactical Sugar method for el to create a <div> DOM element, works exactly the same except you don't have to pass a type
+ * Syntactical Sugar method for el to create a <div> DOM element, works
+ * exactly the same except you don't have to pass a type.
  */
 export const divEl = options => el('div', options)
 /**
- * Syntactical Sugar method for el to create a <button> DOM element, works exactly the same except you don't have to pass a type
+ * Syntactical Sugar method for el to create a <button> DOM element, works
+ * exactly the same except you don't have to pass a type.
  */
 export const buttonEl = options => el('button', options)
 /**
- * Syntactical Sugar method for el to create a <section> DOM element, works exactly the same except you don't have to pass a type
+ * Syntactical Sugar method for el to create a <section> DOM element, works
+ * exactly the same except you don't have to pass a type.
  */
 export const sectionEl = options => el('section', options)
 /**
- * Syntactical Sugar method for el to create a <header> DOM element, works exactly the same except you don't have to pass a type
+ * Syntactical Sugar method for el to create a <header> DOM element, works
+ * exactly the same except you don't have to pass a type.
  */
 export const headerEl = options => el('header', options)
 /**
- * Syntactical Sugar method for el to create a <footer> DOM element, works exactly the same except you don't have to pass a type
+ * Syntactical Sugar method for el to create a <footer> DOM element, works
+ * exactly the same except you don't have to pass a type.
  */
 export const footerEl = options => el('footer', options)
