@@ -87,7 +87,7 @@ test('el function parameters', (t) => {
   })
 
   t.test('type, with styles in options', (assert) => {
-    const actual = el('div', { styles: { backgroundColor: 'black' }})
+    const actual = el('div', { styles: { backgroundColor: 'black' } })
     const expected = document.createElement('div')
     expected.style = {}
     expected.style.cssText = 'background-color: black;'
@@ -100,5 +100,4 @@ test('el function parameters', (t) => {
 
     assert.end()
   })
-
 })
