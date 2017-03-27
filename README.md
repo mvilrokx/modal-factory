@@ -6,6 +6,7 @@
 [![dependencies Status](https://david-dm.org/mvilrokx/modal-factory/status.svg)](https://david-dm.org/mvilrokx/modal-factory)
 [![devDependencies Status](https://david-dm.org/mvilrokx/modal-factory/dev-status.svg)](https://david-dm.org/mvilrokx/modal-factory?type=dev)
 [![gzip-size](http://img.badgesize.io/mvilrokx/modal-factory/master/dist/modalFactory.js?compression=gzip)](http://img.badgesize.io/mvilrokx/modal-factory/master/dist/modalFactory.js?compression=gzip)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c1c80605383545e2bc551bab04cf181d)](https://www.codacy.com/app/mvilrokx/modal-factory?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mvilrokx/modal-factory&amp;utm_campaign=Badge_Grade)
 
 # Modal Factory
 Zero-dependency, pure JavaScript, modal dialogs.
