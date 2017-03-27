@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/mvilrokx/modal-factory/badges/gpa.svg)](https://codeclimate.com/github/mvilrokx/modal-factory)
 [![dependencies Status](https://david-dm.org/mvilrokx/modal-factory/status.svg)](https://david-dm.org/mvilrokx/modal-factory)
 [![devDependencies Status](https://david-dm.org/mvilrokx/modal-factory/dev-status.svg)](https://david-dm.org/mvilrokx/modal-factory?type=dev)
-
+(http://img.badgesize.io/mvilrokx/modal-factory/master/dist/modalFactory.js?compression=gzip)![gzip size]
 
 # Modal Factory
 Zero-dependency, pure JavaScript, modal dialogs.
