@@ -51,6 +51,7 @@ test('el function parameters', (t) => {
 
     assert.end()
   })
+
   t.test('type, with options', (assert) => {
     const actual = el('div', { id: 'right-id' })
     const expected = document.createElement('div')
@@ -70,4 +71,34 @@ test('el function parameters', (t) => {
 
     assert.end()
   })
+
+  t.test('type, with class in options', (assert) => {
+    const actual = el('div', { classes: 'optional-class' })
+    const expected = document.createElement('div')
+    expected.className = 'optional-class'
+    assert.equals(
+      actual.className,
+      expected.className,
+      `Create a <div> DOM object when passing in "div" as type with the class set
+      to whatever class is passed in through the options`
+    )
+
+    assert.end()
+  })
+
+  t.test('type, with styles in options', (assert) => {
+    const actual = el('div', { styles: { backgroundColor: 'black' }})
+    const expected = document.createElement('div')
+    expected.style = {}
+    expected.style.cssText = 'background-color: black;'
+    assert.equals(
+      actual.style.cssText,
+      expected.style.cssText,
+      `Create a <div> DOM object when passing in "div" as type with the class set
+      to whatever class is passed in through the options`
+    )
+
+    assert.end()
+  })
+
 })
