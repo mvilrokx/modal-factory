@@ -34,11 +34,11 @@ module.exports = {
             options: {
               modules: true,
               // importLoaders: 1
-            }
+            },
           }, {
             loader: 'postcss-loader',
           }
-        ]
+        ],
       }
     ]
   }

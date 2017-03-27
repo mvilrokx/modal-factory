@@ -55,7 +55,8 @@ test('el function parameters', (t) => {
     const actual = el('div', { id: 'right-id' })
     const expected = document.createElement('div')
     expected.id = 'wrong-id'
-    // I tried deepEquals on the actual DOM Objects but that always seems to pass the test so I can't use that.
+    // I tried deepEquals on the actual DOM Objects but that always seems to
+    // pass the test so I can't use that.
     // Is there a toString option for DOM objects???
     assert.notEqual(actual.id, expected.id, 'ID not set correctly')
 
