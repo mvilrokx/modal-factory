@@ -1,7 +1,6 @@
 import './setup'
 import test from 'tape'
-import el from '../src/lib/el'
-import { divEl, headerEl, sectionEl, footerEl, buttonEl } from '../src/lib/el'
+import el, { divEl, headerEl, sectionEl, footerEl, buttonEl } from '../src/lib/el'
 
 test('Sanity checks', (assert) => {
   assert.equals(typeof el, 'function', 'el is a function.')
@@ -32,12 +31,16 @@ test('el function parameters', (t) => {
     const actual = el('div')
     const expected = document.createElement('div')
 
-    assert.deepEquals(actual, expected, 'Create a <div> DOM object when passing in "div" as type with no options')
+    assert.deepEquals(
+      actual,
+      expected,
+      'Create a <div> DOM object when passing in "div" as type with no options'
+    )
 
     assert.end()
   })
   t.test('type, with options', (assert) => {
-    const actual = el('div', { id: 'right-id'})
+    const actual = el('div', { id: 'right-id' })
     const expected = document.createElement('div')
     expected.id = 'wrong-id'
     // I tried deepEquals on the actual DOM Objects but that always seems to pass the test so I can't use that.
@@ -45,7 +48,11 @@ test('el function parameters', (t) => {
     assert.notEqual(actual.id, expected.id, 'ID not set correctly')
 
     expected.id = 'right-id'
-    assert.equals(actual.id, expected.id, 'Create a <div> DOM object when passing in "div" as type with the ID set to whatever id is passed in through the options')
+    assert.equals(
+      actual.id,
+      expected.id,
+      'Create a <div> DOM object when passing in "div" as type with the ID set to whatever id is passed in through the options'
+    )
 
     assert.end()
   })

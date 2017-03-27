@@ -1,7 +1,8 @@
 /**
  * @module
 */
-const dasherize = (str = '') => str.replace(/[A-Z]/g, (c, i) => (i !== 0 ? '-' : '') + c.toLowerCase())
+const dasherize = (str = '') =>
+  str.replace(/[A-Z]/g, (c, i) => (i !== 0 ? '-' : '') + c.toLowerCase())
 
 /**
  * Converts the camelCased/CamelCased string that is passed in to a dash'ed

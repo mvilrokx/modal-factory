@@ -3,7 +3,8 @@ import dasherize from './dasherize'
 /**
  * @module
 */
-const styleObjectString = (style = {}) => Object.keys(style).reduce((str, key) => `${str}${dasherize(key)}: ${style[key]}; `, '')
+const styleObjectString = (style = {}) =>
+  Object.keys(style).reduce((str, key) => `${str}${dasherize(key)}: ${style[key]}; `, '')
 
 /**
  * Converts an object that contains CSS styles into a string.
