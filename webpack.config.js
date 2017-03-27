@@ -17,12 +17,12 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader'
+            loader: 'babel-loader',
           }, {
             loader: 'eslint-loader',
             options: { fix: true },
-          }
-        ]
+          },
+        ],
       }, {
         test: /\.css$/,
         exclude: /node_modules/,

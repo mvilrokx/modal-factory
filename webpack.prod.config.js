@@ -21,8 +21,8 @@ module.exports = {
           }, {
             loader: 'eslint-loader',
             options: { fix: true },
-          }
-        ]
+          },
+        ],
       }, {
         test: /\.css$/,
         exclude: /node_modules/,

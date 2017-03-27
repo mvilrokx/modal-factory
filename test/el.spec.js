@@ -1,5 +1,5 @@
-import './setup'
 import test from 'tape'
+import './setup'
 import el, { divEl, headerEl, sectionEl, footerEl, buttonEl } from '../src/lib/el'
 
 test('Sanity checks', (assert) => {
@@ -17,13 +17,25 @@ test('el function parameters', (t) => {
   // t.test('no parameters', (assert) => {
     // const actual = el()
     // const expected = document.createElement()
-    // assert.deepEquals(actual, expected, 'Create an HTMLUnknownElement DOM object when passing in no type and no options')
+    // assert.deepEquals(
+    //  actual,
+    //  expected,
+    //  'Create an HTMLUnknownElement DOM object when passing in no type and no options'
+    // )
     // assert.doesNotThrow(() => el())
     // assert.throws(el, /argument required/)
     // const elem = el('div')
     // t.comment(elem)
-    // assert.throws(() => el(), new RegExp('.*'), 'TypeError gets thrown when no parameters are supplied.')
-    // assert.throws(() => el(), new RegExp('1 argument required, but only 0 present.'), 'TypeError gets thrown when no parameters are supplied.')
+    // assert.throws(
+    //  () => el(),
+    //  new RegExp('.*'),
+    //  'TypeError gets thrown when no parameters are supplied.'
+    // )
+    // assert.throws(
+    //  () => el(),
+    //  new RegExp('1 argument required, but only 0 present.'),
+    //  'TypeError gets thrown when no parameters are supplied.'
+    // )
 
     // assert.end()
   // })
@@ -51,10 +63,10 @@ test('el function parameters', (t) => {
     assert.equals(
       actual.id,
       expected.id,
-      'Create a <div> DOM object when passing in "div" as type with the ID set to whatever id is passed in through the options'
+      `Create a <div> DOM object when passing in "div" as type with the ID set
+      to whatever id is passed in through the options`
     )
 
     assert.end()
   })
-
 })
