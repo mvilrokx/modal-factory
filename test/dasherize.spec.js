@@ -17,7 +17,7 @@ test('dasherize string with no uppercase letters', (assert) => {
   assert.equals(
     actual,
     expected,
-    'String with no uppercase letters returns unchanged as there is nothing to dasherize'
+    'String with no uppercase letters returns unchanged as there is nothing to dasherize',
   )
 
   assert.end()
@@ -39,7 +39,7 @@ test('dasherize string with many uppercase letters', (assert) => {
   assert.equals(
     actual,
     expected,
-    'String with several uppercase letters returns a dasherize version'
+    'String with several uppercase letters returns a dasherize version',
   )
 
   assert.end()
@@ -52,7 +52,7 @@ test('dasherize string with many uppercase letters, including initial letter', (
   assert.equals(
     actual,
     expected,
-    'String with several uppercase letters, including initial letter, returns a dasherize version'
+    'String with several uppercase letters, including initial letter, returns a dasherize version',
   )
 
   assert.end()

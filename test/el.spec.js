@@ -46,7 +46,7 @@ test('el function parameters', (t) => {
     assert.deepEquals(
       actual,
       expected,
-      'Create a <div> DOM object when passing in "div" as type with no options'
+      'Create a <div> DOM object when passing in "div" as type with no options',
     )
 
     assert.end()
@@ -66,7 +66,7 @@ test('el function parameters', (t) => {
       actual.id,
       expected.id,
       `Create a <div> DOM object when passing in "div" as type with the ID set
-      to whatever id is passed in through the options`
+      to whatever id is passed in through the options`,
     )
 
     assert.end()
@@ -80,7 +80,7 @@ test('el function parameters', (t) => {
       actual.className,
       expected.className,
       `Create a <div> DOM object when passing in "div" as type with the class set
-      to whatever class is passed in through the options`
+      to whatever class is passed in through the options`,
     )
 
     assert.end()
@@ -95,7 +95,7 @@ test('el function parameters', (t) => {
       actual.style.cssText,
       expected.style.cssText,
       `Create a <div> DOM object when passing in "div" as type with the class set
-      to whatever class is passed in through the options`
+      to whatever class is passed in through the options`,
     )
 
     assert.end()
